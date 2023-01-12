@@ -3,7 +3,7 @@
 ---
 
 ### Project: Snacks CRUD
-### Author: Alejandro
+### Author: Alejandro Rivera
 
 ---
 
