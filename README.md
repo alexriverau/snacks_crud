@@ -1,4 +1,4 @@
-# Lab: 29
+# Lab: 28 - Django CRUD
 
 ---
 
