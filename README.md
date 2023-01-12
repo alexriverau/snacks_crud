@@ -1,13 +1,13 @@
-# Lab: 29 - Custom User Model / Tailwind CSS / Flowbite
+# Lab: 28 - Django CRUD
 
 ---
 
-### Project: Custom User Model / Tailwind CSS / Flowbite
+### Project: Snacks CRUD
 ### Author: Alejandro
 
 ---
 
-Django project that updates the administration users in the "snacks" application. Implements a custom user model, adds CSS styling utilizing Tailwind CSS / Flowbite, and creates `.env` file.
+Django project that adds full CRUD functionality to a "snacks" application. Allows user to Create, Read, Update and Delete "snacks"
 
 ### Setup
 
