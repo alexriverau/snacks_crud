@@ -2,12 +2,20 @@
 
 {% block content %}
 
-    <h2>Title:  {{ snack.title }}</h2>
-    <p>Purchaser: {{ snack.purchaser }}</p>
-    <p>Description: {{ snack.description }}</p>
-    <nav>
-        <a href="{% url 'snack_update' snack.pk %}">update</a>
-        <a href="{% url 'snack_delete' snack.pk %}">delete</a>
-    </nav>
+    <div class="flex flex-col items-center">
+        <h2 class="text-2xl p-2 font-semibold text-gray-700 dark:text-white">Title:  {{ snack.title }}</h2>
+        <p class="text-lg p-2 font-medium text-center text-justify text-gray-700 dark:text-white max-w-md">Description: {{ snack.description }}</p>
+        <p class="text-lg p-2 font-medium text-gray-700 dark:text-white">Purchaser: {{ snack.purchaser }}</p>
+        <div class="hidden w-full md:block md:w-auto">
+            <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
+                <li>
+                  <a href="{% url 'snack_update' snack.pk %}" class="px-3 py-2 p-3 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Update</a>
+                </li>
+                <li>
+                  <a href="{% url 'snack_delete' snack.pk %}" class="px-3 py-2 p-3 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Delete</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
 {% endblock content %}
