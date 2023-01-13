@@ -1,13 +1,22 @@
+# Lab: 29 - Custom User Model / Tailwind CSS / Flowbite
 # Lab: 28 - Django CRUD
 
 ---
 
-### Project: Snacks CRUD
+### Project: Snacks
 ### Author: Alejandro Rivera
 
 ---
 
-Django project that adds full CRUD functionality to a "snacks" application. Allows user to Create, Read, Update and Delete "snacks"
+Django project that builds a "snacks" application.
+
+* v1.1
+  * Updates the administration users in the "snacks" app. 
+  * Implements a custom user model.
+  * Adds styling with Tailwind CSS / Flowbite. 
+  * Creates `.env` file 
+* v1.0
+  * Adds full CRUD functionality. Allows user to Create, Read, Update and Delete "snacks". 
 
 ### Setup
 
@@ -15,6 +24,7 @@ Django project that adds full CRUD functionality to a "snacks" application. Allo
   * **run:** pip install -r requirements.txt
 * Dependencies: 
   * [requirements.txt](requirements.txt)
+* Update `.env` file with secret key 
 
 ### How to initialize/run your application
 
@@ -27,7 +37,7 @@ Django project that adds full CRUD functionality to a "snacks" application. Allo
 
 * app page: [snacks](http://127.0.0.1:8000/)
 * admin page: [snacks_admin](http://127.0.0.1:8000/admin)
-  * username: admin
+  * email: admin@admin.com
   * password: django
 
 ### Tests
